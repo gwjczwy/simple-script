@@ -1,5 +1,5 @@
-# 安装pip
+# 瀹夎pip
 curl -s https://bootstrap.pypa.io/get-pip.py | python3
 
-# 安装最新版docker
+# 瀹夎鏈�鏂扮増docker
 curl -s https://get.docker.com/ | sh
