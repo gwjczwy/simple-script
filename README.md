@@ -10,3 +10,8 @@ sudo /usr/bin/python3.4 get-pip.py
 ```shell
 curl -s https://get.docker.com/ | sh
 ```
+
+# 当前目录下开启nginx下载服务器,不过不显示目录
+```
+docker container run -d --rm --name nginx -p 0.0.0.0:80:80 -v $PWD:/usr/share/nginx/html nginx
+```
