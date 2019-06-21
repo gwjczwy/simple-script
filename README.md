@@ -42,6 +42,9 @@ docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u
 ```
 后面的 --url 参数是要扫描的域名 详见 [https://xz.aliyun.com/t/2794](https://xz.aliyun.com/t/2794)
 
-
-
+# sqlmap
+```shell
+#### 显示详细信息 从Google寻找目标 跳过询问 绕过WAF
+python sqlmap.py -v3 -g inurl:php?uid= –answers="quit=N,follow=N,keep testing=Y,sitemap=Y,test=Y" --batch –tampertamper/between.py,tamper/randomcase.py,tamper/space2comment.py
+```
 
