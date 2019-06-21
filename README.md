@@ -48,3 +48,8 @@ docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u
 python sqlmap.py -v3 -g inurl:php?uid= –answers="quit=N,follow=N,keep testing=Y,sitemap=Y,test=Y" --batch –tampertamper/between.py,tamper/randomcase.py,tamper/space2comment.py
 ```
 
+# FuzzScanner
+```shell
+docker pull registry.cn-hangzhou.aliyuncs.com/secplus/tide-fuzzscanner:1.0
+docker run --name fuzzscanner -v "$PWD":"/log" -ti 52341fc71d0a /bin/bash
+```
