@@ -21,7 +21,7 @@ docker-compose --version
 ```
 
 # FileBrowser(多线程下载)(需要docker,docker-compose)
-``shell
+```shell
 git clone https://github.com/bboysoulcn/awesome-dockercompose.git
 cd awesome-dockercompose/filebrowser/
 nano docker-compose.yaml
