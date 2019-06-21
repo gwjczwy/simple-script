@@ -27,6 +27,6 @@ docker container run -d --rm --name nginx -p 0.0.0.0:80:80 -v $PWD:/usr/share/ng
 
 # WPScan
 ```shell
-# 后面的 --url 参数是要扫描的域名 详见 [https://xz.aliyun.com/t/2794](https://xz.aliyun.com/t/2794)
 docker run -it --rm wpscanteam/wpscan --url https://target.tld/ --enumerate u
 ```
+后面的 --url 参数是要扫描的域名 详见 [https://xz.aliyun.com/t/2794](https://xz.aliyun.com/t/2794)
