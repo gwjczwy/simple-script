@@ -50,6 +50,10 @@ python sqlmap.py -v3 -g inurl:php?uid= –answers="quit=N,follow=N,keep testing=
 
 # FuzzScanner
 ```shell
-docker pull registry.cn-hangzhou.aliyuncs.com/secplus/tide-fuzzscanner:1.0
-docker run --name fuzzscanner -v "$PWD":"/log" -ti 52341fc71d0a /bin/bash
+yum install ruby
+yum install nmap
+git clone https://github.com/TideSec/FuzzScanner
+cd FuzzScanner
+pip install -r requirements.txt
+python FuzzScanner.py -hc 要扫描网址
 ```
