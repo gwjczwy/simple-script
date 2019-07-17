@@ -57,3 +57,14 @@ cd FuzzScanner
 pip install -r requirements.txt
 python FuzzScanner.py -hc 要扫描网址
 ```
+
+# PHP
+```shell
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum install -y yum-utils
+# yum-config-manager --enable remi-php55   [Install PHP 5.5]
+# yum-config-manager --enable remi-php56   [Install PHP 5.6]
+# yum-config-manager --enable remi-php72   [Install PHP 7.2]
+yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
+```
