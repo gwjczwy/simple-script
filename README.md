@@ -67,4 +67,5 @@ yum install -y yum-utils
 # yum-config-manager --enable remi-php56   [Install PHP 5.6]
 # yum-config-manager --enable remi-php72   [Install PHP 7.2]
 yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
+php -v
 ```
