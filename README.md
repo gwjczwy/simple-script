@@ -20,7 +20,34 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
 docker-compose --version
 ```
 
-# FileBrowser(多线程下载)(需要docker,docker-compose)
+# PHP
+```shell
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
+yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+yum install -y yum-utils
+# yum-config-manager --enable remi-php55   [Install PHP 5.5]
+# yum-config-manager --enable remi-php56   [Install PHP 5.6]
+# yum-config-manager --enable remi-php72   [Install PHP 7.2]
+yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
+php -v
+```
+
+# zsh
+### CentOS
+```bash
+yum -y install zsh
+chsh -s /bin/zsh
+重启
+curl
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+#主题
+ls ~/.oh-my-zsh/themes
+#改主题
+vim ~/.zshrc
+ZSH_THEME="robbyrussell"
+```
+
+# FileBrowser(基于WEB的文件管理器)(多线程下载)(需要docker,docker-compose)
 ```shell
 git clone https://github.com/bboysoulcn/awesome-dockercompose.git
 cd awesome-dockercompose/filebrowser/
@@ -58,14 +85,3 @@ pip install -r requirements.txt
 python FuzzScanner.py -hc 要扫描网址
 ```
 
-# PHP
-```shell
-yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-yum install http://rpms.remirepo.net/enterprise/remi-release-7.rpm
-yum install -y yum-utils
-# yum-config-manager --enable remi-php55   [Install PHP 5.5]
-# yum-config-manager --enable remi-php56   [Install PHP 5.6]
-# yum-config-manager --enable remi-php72   [Install PHP 7.2]
-yum install php php-mcrypt php-cli php-gd php-curl php-mysql php-ldap php-zip php-fileinfo
-php -v
-```
